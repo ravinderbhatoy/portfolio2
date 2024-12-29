@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        'lightest-violet': "#C1C1D2",
         'ex-ight-violet': '#8080A4',
         'light-violet': '#A6A6BF',
         'medium-violet': '#333346',

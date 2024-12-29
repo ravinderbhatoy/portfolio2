@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const ContentBox = () => {
   return (
-    <div>  </div>
-  )
-}
+    <div>
+      <h1>content</h1>
+    </div>
+  );
+};
 
-export default ContentBox
+export default ContentBox;

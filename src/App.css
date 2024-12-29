@@ -1,3 +1,5 @@
 body {
-    background-color: #A6A6BF;
+    background-color: #b2b2d1;
+    background-image: url('/images/background.svg');
+    background-size: cover;
 }
