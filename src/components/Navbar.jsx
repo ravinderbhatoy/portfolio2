@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="text-2xl font-heading text-medium-violet">
-      <ul className="flex gap-14 overflow-scroll">
-        <a
-          href=""
+      <ul className="flex gap-14 overflow-scroll no-scrollbar">
+        <Link
+          to=""
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -20,9 +21,9 @@ function Navbar() {
             </svg>
             Home
           </li>
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          to=""
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -36,9 +37,9 @@ function Navbar() {
             </svg>
             Blog
           </li>
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          to="/code"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -52,8 +53,8 @@ function Navbar() {
             </svg>
             Code
           </li>
-        </a>
-        <a
+        </Link>
+        <Link
           href=""
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
@@ -72,9 +73,9 @@ function Navbar() {
             </svg>
             Resume
           </li>
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          to=""
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -88,7 +89,7 @@ function Navbar() {
             </svg>
             Social
           </li>
-        </a>
+        </Link>
       </ul>
     </nav>
   );
