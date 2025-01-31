@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="text-2xl font-heading text-medium-violet">
       <ul className="flex gap-14 overflow-scroll no-scrollbar">
         <Link
-          to=""
+          to="/"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">

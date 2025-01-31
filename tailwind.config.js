@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         'lightest-violet': "#C1C1D2",
-        'ex-ight-violet': '#8080A4',
+        'ex-light-violet': '#8080A4',
         'light-violet': '#A6A6BF',
         'medium-violet': '#333346',
         'hard-violet': '#1A1A24',

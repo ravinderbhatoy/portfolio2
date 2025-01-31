@@ -9,8 +9,8 @@ function Home() {
       <div className="container mx-auto px-12 py-12 space-y-12">
         <Navbar />
         <div className="grid gap-8 lg:grid-cols-4">
-          <ProfileBox />
-          <div className="lg:col-span-3 ">
+            <ProfileBox />
+          <div className="lg:col-span-3 h-fit space-y-8">
             <Postcard
               heading={"Hi, I am Ravinder a coder."}
               subHeading="Living Great, Building Awesome Digital Experiences."
@@ -20,11 +20,6 @@ function Home() {
             "
             icon="/logo/intro-emote.svg"
             />
-          </div>
-        </div>
-        <div className="grid gap-8 lg:grid-cols-4">
-          <div className="hidden lg:block"></div>
-          <div className="lg:col-span-3">
             <Postcard
               heading={"My Hobbies"}
               description="

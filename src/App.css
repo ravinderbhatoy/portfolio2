@@ -1,6 +1,7 @@
 body {
     background-color: #b2b2d1;
     background-image: url('/images/background.svg');
+    overflow: hidden;
     background-size: cover;
 }
 

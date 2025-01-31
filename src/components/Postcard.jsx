@@ -1,25 +1,49 @@
 import React from 'react'
 
-function Postcard({heading, subHeading, description,icon}) {
+function Postcard({heading, subHeading, description,icon,image, imageOnly, fontNormal}) {
   return (
-    <article className='h-full overflow-hidden'>
-        <div className='bg-hard-violet text-ex-ight-violet font-heading text-3xl px-6 py-2 flex gap-4'>
-          <div className='w-4 bg-lightest-violet h-4 mt-2'></div>
-          <div className='flex justify-between w-full'>
-            <div>
-            <h4>{heading}</h4>
-            {subHeading && 
-              <p className='font-normal text-lg'>{subHeading}</p>
+    <article>
+      {imageOnly ?
+        <div>
+         <div className='bg-hard-violet text-ex-light-violet font-heading text-2xl flex gap-4'>
+            <div className='w-3 bg-lightest-violet h-3 my-auto ms-3'></div>
+            <div className='flex justify-between w-full'>
+              <div>
+                <h4 className={fontNormal ? "font-normal text-lg" : ""}>{heading}</h4>
+              </div>
+            </div>
+          </div> 
+            <img src={image} alt={image}/>
+        </div>
+        : 
+        <div className=''>
+          <div className='bg-hard-violet text-ex-light-violet font-heading text-2xl flex gap-4'>
+            <div className='w-3 bg-lightest-violet h-3 my-auto ms-3'></div>
+            <div className='flex justify-between w-full'>
+              <div>
+                <h4 className={fontNormal ? "font-normal text-lg" : ""}>{heading}</h4>
+                {subHeading && 
+                  <p className='font-normal text-base'>{subHeading}</p>
+                }
+              </div>
+              {icon ? 
+              
+              <div className={`bg-light-violet flex justify-center ${subHeading ? 'p-2' : 'p-1'}`}>
+                <img className="" src={icon} alt="" />
+              </div>
+                : ""
             }
             </div>
-            <div className={`bg-light-violet h-fit ${subHeading ? 'p-4' : 'p-2'}`}>
-              <img src={icon} alt="" />
-            </div>
           </div>
+          <div className='bg-lightest-violet font-normal p-6 h-full'>
+            {description}
+            {image ? 
+              <img className="w-full max-w-96 mx-auto" src={image} alt="image"/> 
+              : ""}
+
           </div>
-        <div className='bg-lightest-violet font-normal p-6 h-full'>
-          {description}
         </div>
+      }
     </article>
   )
 }
