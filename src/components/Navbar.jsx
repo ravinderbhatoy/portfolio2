@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="text-2xl font-heading text-medium-violet">
       <ul className="flex gap-14 overflow-scroll no-scrollbar">
-        <Link
+        <NavLink
           to="/"
+          activeclassname="active"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -21,10 +22,11 @@ function Navbar() {
             </svg>
             Home
           </li>
-        </Link>
-        <Link
-          to=""
-          className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
+        </NavLink>
+        <NavLink
+          to="/blog"
+          activeclassname="active"
+          className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet disabled"
         >
           <li className="flex gap-2 place-items-center ">
             <svg
@@ -37,9 +39,10 @@ function Navbar() {
             </svg>
             Blog
           </li>
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/code"
+          activeclassname="active"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -53,9 +56,10 @@ function Navbar() {
             </svg>
             Code
           </li>
-        </Link>
-        <Link
-          href=""
+        </NavLink>
+        <NavLink
+          to="/resume"
+          activeclassname="active"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -73,9 +77,10 @@ function Navbar() {
             </svg>
             Resume
           </li>
-        </Link>
-        <Link
-          to=""
+        </NavLink>
+        <NavLink
+          to="social"
+          activeclassname="active"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
           <li className="flex gap-2 place-items-center ">
@@ -89,7 +94,7 @@ function Navbar() {
             </svg>
             Social
           </li>
-        </Link>
+        </NavLink>
       </ul>
     </nav>
   );

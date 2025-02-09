@@ -17,3 +17,8 @@ body {
     background-size: 4px 4px;
 }
 
+.active {
+    background-color: #333346; 
+    color: #A6A6BF;
+}
+
