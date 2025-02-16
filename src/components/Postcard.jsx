@@ -16,7 +16,7 @@ function Postcard({heading, subHeading, description,icon,image, imageOnly, fontN
             <img src={image} alt={image}/>
         </div>
         : 
-        <div className=''>
+        <div>
           <div className='bg-hard-violet text-ex-light-violet font-heading text-2xl flex gap-4'>
             <div className='w-3 bg-lightest-violet h-3 my-auto ms-3'></div>
             <div className='flex justify-between w-full'>
@@ -35,7 +35,7 @@ function Postcard({heading, subHeading, description,icon,image, imageOnly, fontN
             }
             </div>
           </div>
-          <div className='bg-lightest-violet font-normal p-6 h-full'>
+          <div className='bg-lightest-violet font-normal p-6'>
             {description}
             {image ? 
               <img className="w-full max-w-96 mx-auto" src={image} alt="image"/> 

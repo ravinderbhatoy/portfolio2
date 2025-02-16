@@ -79,7 +79,7 @@ function Navbar() {
           </li>
         </NavLink>
         <NavLink
-          to="social"
+          to="/social"
           activeclassname="active"
           className="border-2 px-5 py-1 border-medium-violet hover:bg-medium-violet hover:text-light-violet"
         >
