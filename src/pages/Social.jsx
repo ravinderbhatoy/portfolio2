@@ -4,10 +4,15 @@ import SocialLink from '../components/SocialLink'
 
 function Social() {
   return (
-    <div className="container mx-auto px-12 py-12 space-y-12 h-screen">
+    <div className="container mx-auto py-12 md:px-12">
       <Navbar/>
-        <div className="bg-hard-violet w-full h-5 opacity-70"></div>
-        <div className='mx-auto flex flex-wrap gap-8'>
+      <div className="bg-hard-violet w-full h-5 opacity-70 mt-12"></div>
+        <p className='bg-lightest-violet p-6 text-lg w-full my-6'>
+          You can find me on the following social networks, though I'm not necessarily very active on all of them.<br/>
+          Any account not listed below that uses my name or one of my handles may not be me.
+          This is the only domain I use for my personal website.
+        </p>
+      <div className='mx-auto flex flex-wrap gap-8 '>
         <SocialLink
           title="Github"
           icon="/logo/github.svg"

@@ -6,7 +6,7 @@ import Postcard from '../components/Postcard'
 function Home() {
   return (
     <>
-      <div className="container mx-auto px-12 py-12 space-y-12">
+      <div className="container mx-auto md:px-12 py-12 space-y-12">
         <Navbar />
         <div className="grid gap-8 lg:grid-cols-4">
             <ProfileBox />

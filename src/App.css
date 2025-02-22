@@ -1,7 +1,15 @@
+:root{
+    --lightest-violet: #C1C1D2;
+    --ex-light-violet: #8080A4;
+    --light-violet: #A6A6BF;
+    --medium-violet: #333346;
+    --hard-violet: #1A1A24;
+    --ex-hard-violet: #0E0E12;
+}
+
 body {
     background-color: #b2b2d1;
     background-image: url('/images/background.svg');
-    overflow: hidden;
     background-size: cover;
 }
 
@@ -18,7 +26,20 @@ body {
 }
 
 .active {
-    background-color: #333346; 
-    color: #A6A6BF;
+    background-color: var(--medium-violet); 
+    color: var(--light-violet);
 }
 
+.active > li > div {
+    background-color: var(--light-violet);
+    color: var(--medium-violet);
+}
+
+.active > div {
+    border-color: var(--medium-violet);
+}
+
+.link-disable{
+    pointer-events: none;
+    opacity: 0.5;
+}
