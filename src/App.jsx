@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Code from "./pages/Code";
 import Social from "./pages/Social";
+import ResumeEmbed from "./pages/ResumeEmbed";
 
 function App() {
 
@@ -18,6 +19,10 @@ function App() {
     {
       path: "/social",
       element: <Social/>
+    },
+    {
+      path: "/resume",
+      element: <ResumeEmbed/>
     }
   ])
   return (

@@ -51,7 +51,6 @@ function Navbar() {
         />
         <NavItem
           url="/resume"
-          disabled={true}
           icon={
             <svg
               className="fill-current"

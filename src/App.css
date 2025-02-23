@@ -43,3 +43,8 @@ body {
     pointer-events: none;
     opacity: 0.5;
 }
+
+.para-text {
+    line-height: 2;
+}
+
