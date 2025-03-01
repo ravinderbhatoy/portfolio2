@@ -19,7 +19,7 @@ function ResumeEmbed() {
     <div className="container mx-auto py-12 md:px-12 h-screen">
       <Navbar />
       <div className="bg-light-violet w-full h-5 opacity-70 mt-12 mb-7"></div>
-      <div className="overflow-scroll no-scrollbar h-[calc(100vh-12rem)]">
+      <div className="h-full lg:overflow-scroll no-scrollbar lg:h-[calc(100vh-12rem)]">
         <div className="bg-hard-violet text-lightest-violet text-xl flex items-center justify-between p-1 px-4">
           <div className="flex gap-2 items-center ">
           <svg className="fill-current" width="15" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">

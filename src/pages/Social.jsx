@@ -16,52 +16,47 @@ function Social() {
         <SocialLink
           title="Github"
           icon="/logo/github.svg"
-          link=""
+          link="https://github.com/ravinderbhatoy"
         />
         <SocialLink
           title="Instagram"
           icon="/logo/instagram.svg"
-          link=""
+          link="https://www.instagram.com/binduuyy"
         />
         <SocialLink
           title="Reddit"
           icon="/logo/reddit.svg"
-          link=""
+          link="https://www.reddit.com/user/ray_pamber/"
         />
       <SocialLink
           title="Facebook"
           icon="/logo/facebook.svg"
-          link=""
+          link="https://www.facebook.com/ravinder.bhatoy.1"
         />
       <SocialLink
           title="Telegram"
           icon="/logo/telegram.svg"
-          link=""
+          link="https://t.me/binduuyy"
         />
       <SocialLink
           title="Whatsapp"
           icon="/logo/whatsapp.svg"
-          link=""
+          link="disable"
         />
         <SocialLink
           title="Snapchat"
           icon="/logo/snapchat.svg"
-          link=""
+          link="https://www.snapchat.com/add/binduyy"
         />
         <SocialLink
           title="Mail"
           icon="/logo/mail.svg"
-          link=""
+          link="mailto:ravinderd.bhatoy@gmail.com"
         />
         <SocialLink
           title="LeetCode"
           icon="/logo/leetcode.svg"
-          link=""
-        />
-        <SocialLink
-          title="Coding Ninja"
-          icon="/logo/codingninja.svg"
-          link=""
+          link="https://leetcode.com/u/zrpZTiWq3S/"
         />
       </div>
     </div>
