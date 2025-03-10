@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Code from "./pages/Code";
 import Social from "./pages/Social";
 import ResumeEmbed from "./pages/ResumeEmbed";
+import 'animate.css'
 
 function App() {
 

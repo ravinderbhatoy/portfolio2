@@ -19,9 +19,9 @@ function ProfileBox() {
   }, []);
 
   return (
-    <article className="bg-[url('/images/pattern.webp')] relative p-7 w-full h-fit">
+    <article className=" relative p-7 w-full h-fit animate__animated animate__fadeIn">
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-ex-light-violet bg-opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-lightest-violet z-0"></div>
 
       {/* Content above the background */}
       <div className="relative space-y-2 z-10 text-center text-ex-hard-violet">
@@ -38,7 +38,7 @@ function ProfileBox() {
         </div>
         <div className="space-y-2 w-full max-w-40 text-start mx-auto">
         <h3 className=" text-2xl font-normal">
-          @binuuyy
+          @binduuyy
         </h3>
         <div className="flex">
           <img src="/logo/location.svg" alt="" />

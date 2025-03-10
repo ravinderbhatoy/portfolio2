@@ -41,7 +41,7 @@ function Social() {
       <SocialLink
           title="Whatsapp"
           icon="/logo/whatsapp.svg"
-          link="disable"
+          link="#"
         />
         <SocialLink
           title="Snapchat"

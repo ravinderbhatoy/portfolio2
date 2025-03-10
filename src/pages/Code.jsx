@@ -7,11 +7,11 @@ import Project from '../components/Project';
 
 function Code() {
   return (
-    <div className="container mx-auto px-12 py-12 space-y-12 h-screen">
+    <div className="container mx-auto md:px-12 py-12 space-y-12 h-screen">
       <Navbar/>
       <div className="grid gap-8 lg:grid-cols-4 h-[calc(100vh-10rem)]">
        <ProjectsSidebar/> 
-        <div className="lg:col-span-3 space-y-8 h-full lg:overflow-y-auto no-scrollbar ">
+        <div className="lg:col-span-3 space-y-8 h-full lg:overflow-y-auto no-scrollbar scroll-smooth">
           <div>
             <Postcard heading="About"
               description={Content.about}

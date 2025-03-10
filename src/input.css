@@ -4,6 +4,9 @@
 
 @layer utilities {
       /* Hide scrollbar for Chrome, Safari and Opera */
+    html {
+        scroll-behavior: smooth;
+    }
       .no-scrollbar::-webkit-scrollbar {
           display: none;
       }

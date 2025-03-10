@@ -2,7 +2,7 @@ import React from 'react'
 
 function SocialLink({title, icon, link}) {
   return (
-    <div className='group text-lightest-violet md:max-w-28 flex-1'>
+    <div className='group text-lightest-violet md:max-w-28 flex-1 animate__animated animate__fadeInLeft'>
       <p className='font-semibold transition delay-75 text-center p-1 bg-hard-violet group-hover:bg-lightest-violet group-hover:text-hard-violet'>{title}</p>
       <div className='relative'>
         <a href={link}>

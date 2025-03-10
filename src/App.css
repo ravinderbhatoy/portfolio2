@@ -7,6 +7,7 @@
     --ex-hard-violet: #0E0E12;
 }
 
+
 body {
     background-color: #b2b2d1;
     background-image: url('/images/background.svg');
@@ -47,4 +48,7 @@ body {
 .para-text {
     line-height: 2;
 }
-
+.new {
+  animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}

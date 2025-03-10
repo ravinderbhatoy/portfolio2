@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 function NavItem({url,icon,text,disabled}) {
   return (
     <NavLink
-      className={`group relative w-full p-1 bg-lightest-violet ${disabled ? "link-disable" : ""}`}
+      className={`group relative w-full p-1 bg-lightest-violet nav-item  ${disabled ? "link-disable" : ""}`}
       to={url}
       activeclassname="active "
     >

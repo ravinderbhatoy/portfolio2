@@ -1,16 +1,23 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect,useState } from "react";
+import loading from "/logo/loading.gif"
 
 function ResumeEmbed() {
 
+
   const iframeRef = useRef(null);
+  const [isLoading, setIsLoading] = useState(true); // Initialize as loading
 
   useEffect(() => {
     const iframe = iframeRef.current;
     if (iframe) {
       iframe.onload = () => {
-        iframe.contentWindow.postMessage({ action: 'changeBg', color: "#A6A6BF" }, '*');
+        setIsLoading(false); // Set loading to false when iframe loads
+        iframe.contentWindow.postMessage(
+          { action: "changeBg", color: "#A6A6BF" },
+          "*"
+        );
       };
     }
   }, []);
@@ -19,7 +26,12 @@ function ResumeEmbed() {
     <div className="container mx-auto py-12 md:px-12 h-screen">
       <Navbar />
       <div className="bg-light-violet w-full h-5 opacity-70 mt-12 mb-7"></div>
-      <div className="h-full lg:overflow-scroll no-scrollbar lg:h-[calc(100vh-12rem)]">
+      <div className="relative h-full lg:overflow-scroll no-scrollbar lg:h-[calc(100vh-12rem)] ">
+          {isLoading && 
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
+            <img width="100" src={loading} alt=""/> 
+          </div>
+          }
         <div className="bg-hard-violet text-lightest-violet text-xl flex items-center justify-between p-1 px-4">
           <div className="flex gap-2 items-center ">
           <svg className="fill-current" width="15" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -29,7 +41,9 @@ function ResumeEmbed() {
           <p>Resume</p>
           </div>
           <a target="_blank" href="https://ravinderbhatoy.github.io/resume/">Open in new tab</a>
+          
         </div>  
+
         <iframe
           ref={iframeRef}
           id="myIframe"
@@ -37,7 +51,8 @@ function ResumeEmbed() {
           width="100%" // Or a specific pixel width
           height="100%"
           title="Embedded Resume" // Add a title for accessibility
-        ></iframe>
+        >
+       </iframe>
       </div>
     </div>
   );
