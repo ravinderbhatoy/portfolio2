@@ -7,6 +7,11 @@
     --ex-hard-violet: #0E0E12;
 }
 
+::selection{
+    background-color: var(--hard-violet);
+    color: var(--lightest-violet);
+}
+
 
 body {
     background-color: #b2b2d1;

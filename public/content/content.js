@@ -5,12 +5,12 @@ const Content = {
 🏏 Cricket: I like playing cricket with friends, even though I don't get to play as often as I'd like.<br>
 📺 Anime: I enjoy watching. While I haven't seen a huge number of series, it's something I find enjoyable.<br>
 👨‍👩‍👧‍👦 Socializing: I love spending time with family and friends. It's a source of great joy and comfort for me.<br>
-🎵 Music: I enjoy listening to music, especially older Sufi and Qawwali music, as well as romantic songs.<br>
+🎵 Music: I enjoy listening to music, especially older Sufi,Ghazals and Qawwali music.<br>
 😌 Relaxing: I appreciate quiet time by myself, often with a cup of tea.<br>
 📖 Reading: I've recently started reading books to build a habit, and I've found that I really enjoy it.<br>
 💻 Tech and Coding: I also enjoy reading blogs and articles related to technology and coding.`,
 
-    about: "This section shows the coding projects I've worked on. You'll find explanations, pictures, and sometimes examples of how they work.",
+    about: "This section shows the coding projects I've worked on. You'll find explanations, pictures, and sometimes examples of how they work. All of my projects are available on my Github.",
     current: `
 👨‍💻 Working as a full time software Developer.<br>
 {} Learing DSA from Striver DSA Cheat Sheet. <br>

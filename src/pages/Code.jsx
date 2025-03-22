@@ -60,6 +60,19 @@ function Code() {
             ]}    
           />
           <Project
+            id="ecommerce-django"
+            title="Ecommerce Platform Django"
+            imageTitle="Ecommerce Platform Django"
+            image="/images/projects/ecommerce_django.png"
+            bulletPoints = {[
+              "Developed backend for eCommerce",
+              "Added search and sorting for products.",
+              "Used JavaScript for real-time updates.",
+              "User can write review.",
+              "Frontend was not part of my work."
+            ]}
+          />
+          <Project
             id="frontend-mentor"
             title="Vanilla HTML/CSS"
             imageTitle="Landing Page"
