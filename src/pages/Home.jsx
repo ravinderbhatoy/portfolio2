@@ -24,13 +24,13 @@ function Home() {
               description={Content.hobbies}
               icon="/logo/football.svg"
             />
-            <Postcard
-              paraText={true}
-              date={'Monday, March 10, 2025'}
-              heading={"What I am doing currently"}
-              description={Content.current}
-              icon="/logo/football.svg"
-            />
+            {/* <Postcard */}
+            {/*   paraText={true} */}
+            {/*   date={'Monday, March 10, 2025'} */}
+            {/*   heading={"What I am doing currently"} */}
+            {/*   description={Content.current} */}
+            {/*   icon="/logo/football.svg" */}
+            {/* /> */}
           </div>
         </div>
       </div>
