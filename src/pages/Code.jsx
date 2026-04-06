@@ -1,19 +1,25 @@
-import React from 'react'
-import Postcard from '../components/Postcard'
-import Navbar from '../components/Navbar'
-import Content from '../../public/content/content';
-import ProjectsSidebar from '../components/ProjectsSidebar';
-import Project from '../components/Project';
+import Postcard from "../components/Postcard";
+import Navbar from "../components/Navbar";
+import Content from "../../public/content/content";
+import ProjectsSidebar from "../components/ProjectsSidebar";
+import Project from "../components/Project";
+import PageHeading from "../components/PageHeading";
 
 function Code() {
   return (
-    <div className="container mx-auto md:px-12 py-12 space-y-12 h-screen">
-      <Navbar/>
-      <div className="grid gap-8 lg:grid-cols-4 h-[calc(100vh-10rem)]">
-       <ProjectsSidebar/> 
+    <div className="container mx-auto px-4 md:px-12 py-12 h-screen">
+      <Navbar />
+      <PageHeading
+        title="Code"
+        subtitle="A collection of projects and interfaces I have built."
+      />
+      <div className="bg-light-violet w-full h-5 opacity-70 mb-7"></div>
+      <div className="grid gap-8 lg:grid-cols-4 h-[calc(100vh-16rem)]">
+        <ProjectsSidebar />
         <div className="lg:col-span-3 space-y-8 h-full lg:overflow-y-auto no-scrollbar scroll-smooth">
           <div>
-            <Postcard heading="About"
+            <Postcard
+              heading="About"
               description={Content.about}
               image="/images/lain.png"
             />
@@ -37,7 +43,7 @@ function Code() {
             title="Whatsapp-clone using ReactJS/Firebase"
             imageTitle="Chat-App(React/Firebase)"
             image="/images/projects/chat-app.png"
-            bulletPoints = {[
+            bulletPoints={[
               "Chat application using React and Firebase.",
               "Google Sign-In authentication.",
               "Split-view layout chat and user management.",
@@ -57,19 +63,19 @@ function Code() {
               "User authentication.",
               "SQLite as a database.",
               "Live deployment and hosting on Render.",
-            ]}    
+            ]}
           />
           <Project
             id="ecommerce-django"
             title="Ecommerce Platform Django"
             imageTitle="Ecommerce Platform Django"
             image="/images/projects/ecommerce_django.png"
-            bulletPoints = {[
+            bulletPoints={[
               "Developed backend for eCommerce",
               "Added search and sorting for products.",
               "Used JavaScript for real-time updates.",
               "User can write review.",
-              "Frontend was not part of my work."
+              "Frontend was not part of my work.",
             ]}
           />
           <Project
@@ -77,8 +83,8 @@ function Code() {
             title="Vanilla HTML/CSS"
             imageTitle="Landing Page"
             image="/images/projects/frontend-mentor.png"
-            bulletPoints = {[
-              "Vanilla HTML and CSS.", 
+            bulletPoints={[
+              "Vanilla HTML and CSS.",
               "Live using netlify.",
               "Fully responsive page.",
               "Clean and modern design for various screen sizes.",
@@ -89,9 +95,7 @@ function Code() {
             title="Dashboard TailwindCSS"
             imageTitle="Dashboard TailwindCSS"
             image="/images/projects/feedback-hub.png"
-            bulletPoints={[
-              "Dashboard Design using TailwindCSS"
-            ]}
+            bulletPoints={["Dashboard Design using TailwindCSS"]}
           />
         </div>
       </div>
@@ -99,4 +103,4 @@ function Code() {
   );
 }
 
-export default Code
+export default Code;

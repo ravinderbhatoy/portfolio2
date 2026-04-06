@@ -1,8 +1,9 @@
-import React from 'react'
-
-function Postcard({heading, subHeading, description,icon,image, imageOnly, fontNormal, paraText,bulletPoints, date}) {
+function Postcard({heading, subHeading, description,icon,image, imageOnly, fontNormal, paraText,bulletPoints, date, delay = 0}) {
   return (
-    <article className="h-full animate__animated animate__fadeIn animate__slow"> {/* Added h-full here */}
+    <article
+      className="h-full animate__animated animate__fadeIn animate__slow"
+      style={{ animationDelay: `${delay}ms` }}
+    > {/* Added h-full here */}
       {imageOnly ? (
         <div className="h-full flex flex-col"> {/* Added h-full and flex column here */}
           <div className="bg-hard-violet text-ex-light-violet font-heading text-2xl flex gap-4">
@@ -22,11 +23,11 @@ function Postcard({heading, subHeading, description,icon,image, imageOnly, fontN
               <div className="flex justify-between w-full align-middle">
                 <div className='flex flex-col'>
                   <h4 className={fontNormal ? "font-normal text-lg" : "text-md my-auto"}>{heading}</h4>
-                  {date && <span className="text-xs font-normal pb-1">{date}</span>}
+                  {(date || subHeading) && <span className="text-xs font-normal pb-1">{date || subHeading}</span>}
                 </div>
                 {icon ? (
-                  <div className={`bg-light-violet flex justify-center ${date ? "p-2" : "p-1"}`}>
-                    <img className="" src={icon} alt="" />
+                  <div className={`bg-light-violet flex items-center justify-center ${date || subHeading ? "min-w-12 px-3" : "p-1"}`}>
+                    <img className="w-5 h-5 object-contain" src={icon} alt="" />
                   </div>
                 ) : (
                     ""

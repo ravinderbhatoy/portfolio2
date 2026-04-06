@@ -1,4 +1,3 @@
-import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function NavItem({url,icon,text,disabled}) {
@@ -14,7 +13,7 @@ function NavItem({url,icon,text,disabled}) {
         </div>
         {text}
       </li>
-      <div class="group-hover:border-medium-violet absolute top-0 left-0 w-full h-full border-y-2 border-lightest-violet pointer-events-none"></div>
+      <div className="group-hover:border-medium-violet absolute top-0 left-0 w-full h-full border-y-2 border-lightest-violet pointer-events-none"></div>
     </NavLink>
 
   )

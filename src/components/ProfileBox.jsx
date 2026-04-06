@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-function ProfileBox() {
+function ProfileBox({ delay = 0 }) {
 
   const [currentTime, setCurrentTime] = useState("");
 
@@ -19,7 +19,10 @@ function ProfileBox() {
   }, []);
 
   return (
-    <article className=" relative p-7 w-full h-fit animate__animated animate__fadeIn">
+    <article
+      className=" relative p-7 w-full h-fit animate__animated animate__fadeIn"
+      style={{ animationDelay: `${delay}ms` }}
+    >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-lightest-violet z-0"></div>
 

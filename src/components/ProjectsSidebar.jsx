@@ -1,4 +1,3 @@
-import React from 'react'
 import Content from '../../public/content/content'
 import { useEffect, useState } from 'react';
 
@@ -10,7 +9,7 @@ function ProjectsSidebar() {
 
   useEffect(() => {
     let delay = 0;
-    const newAnimatedItems = items.map((item, index) => ({
+    const newAnimatedItems = items.map((item) => ({
       ...item,
       animated: false,
       delay: delay += 150, // Adjust delay (milliseconds) as needed

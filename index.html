@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,13 +19,5 @@
     <div class="overlay"></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      function changeIframeBackground() {
-        console.log("I frame function called");
-        const iframe = document.getElementById("myIframe");
-        const iframeDocument = iframe.contentWindow.document;
-        iframeDocument.body.style.backgroundColor = "lightblue";
-      }
-    </script>
   </body>
 </html>

@@ -19,6 +19,85 @@ body {
     background-size: cover;
 }
 
+.site-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    background-color: rgba(14, 14, 18, 0.92);
+    color: var(--lightest-violet);
+    padding: 1.5rem;
+}
+
+.site-loader__panel {
+    width: min(100%, 36rem);
+    border: 3px solid rgba(193, 193, 210, 0.4);
+    background: rgba(26, 26, 36, 0.96);
+    box-shadow: 0.65rem 0.65rem 0 rgba(128, 128, 164, 0.35);
+    padding: 1rem;
+}
+
+.site-loader__bar {
+    height: 0.8rem;
+    background: rgba(193, 193, 210, 0.12);
+    border: 2px solid rgba(193, 193, 210, 0.3);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.site-loader__bar-fill {
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, var(--ex-light-violet), var(--lightest-violet));
+    animation: loader-fill 1.6s ease forwards;
+}
+
+.site-loader__text {
+    display: grid;
+    gap: 0.45rem;
+    font-family: monospace;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.site-loader__text div {
+    opacity: 0;
+    animation: loader-line 0.4s ease forwards;
+}
+
+.site-loader__text div:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.site-loader__text div:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.site-loader__text div:nth-child(3) {
+    animation-delay: 1s;
+}
+
+@keyframes loader-fill {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes loader-line {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -53,6 +132,26 @@ body {
 .para-text {
     line-height: 2;
 }
+
+.para-text a {
+    color: var(--ex-light-violet);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.hobby-title {
+    color: var(--hard-violet);
+    font-weight: 600;
+}
+
+.page-heading-title {
+    font-size: clamp(2.75rem, 7vw, 4.25rem);
+    letter-spacing: 0.12rem;
+    line-height: 1;
+    margin: 0 0 1rem;
+    text-shadow: 0.35rem 0.35rem 0 rgba(128, 128, 164, 0.5);
+}
+
 .new {
   animation: fadeInLeft; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 1s; /* don't forget to set a duration! */
